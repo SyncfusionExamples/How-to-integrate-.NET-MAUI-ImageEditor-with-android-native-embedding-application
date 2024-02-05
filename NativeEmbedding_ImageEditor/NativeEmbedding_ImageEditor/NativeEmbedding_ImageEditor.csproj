@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0-android</TargetFramework>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<OutputType>Exe</OutputType>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseMaui>true</UseMaui>
+		<ApplicationId>com.companyname.NativeEmbedding_ImageEditor</ApplicationId>
+		<ApplicationVersion>1</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+	</PropertyGroup>
+	<ItemGroup>
+	  <AndroidResource Remove="Resources\Images\image.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Images\image.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Syncfusion.Maui.ImageEditor" Version="*" />
+	</ItemGroup>
+</Project>
